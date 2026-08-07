@@ -1,0 +1,534 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>html and js codes in one page</h1> -->
+<p id="w"></p>
+    <h1>CODING</h1>
+
+    <input id="numInput" type="number" aria-placeholder="Enter a nummber">
+    <button onclick="multiplicationTable()">Show Table</button>
+    <div id="tableResult"></div>
+    <script>
+        function multiplicationTable(){
+            const number = parseInt(document.getElementById("numInput").value);
+            const resultDiv = document.getElementById("tableResult");
+            resultDiv.innerHTML = ""; //clear previous table
+            if (isNaN(number)) {
+                resultDiv.innerText = "Please enter a valid number";
+                return;
+            }
+            let html = '<h3>Multiplication table of ${number}</h3>';
+            for (let i = 1; i = 12; i++){
+                let result = number * i;
+                html += '${number} x ${i} = ${result}<br>';
+            }
+            resultDiv.innerHTML = html;
+        }
+//         let x = 5;
+// let y = 6;
+// let z = x + y;
+// console.log(z)
+
+// let result = x * y;
+// console.log(result)
+
+// let b = 12;
+// let o = b / y;
+// console.log(o)
+
+// let c = b - x;
+// console.log(c)
+
+// y = ++y;
+// console.log(++y)
+
+// p = --;
+// console.log(--p)
+
+// x = 'black'
+// console.log(x)
+
+// let grade= 'A';
+// console.log("Entering switch block ");
+// switch (grade)
+// {
+//     case 'A': console.log("Good job ");
+//     break;
+//     case 'B': console.log("P;retty good ");
+//     break;
+//     case 'C': console.log("Passed ");ds
+//     break;
+//     case 'D': console.log("Fair ");
+//     break;
+//     case 'F': console.log("Fail");
+//     break;
+//     default: console.log("Unknow grade")
+// }
+// console.log("Exit switch block");
+
+// let name = 'john'
+// let age = 25;
+// let fullname = name + ''  + 'is' + age + "years";
+// console.log(fullname);
+
+// let number = -2.5;
+// console.log(Number.isInteger(number))
+// let a = 10;
+// let b = 16;
+// let c = -5;
+// console.log(a+b+c);
+// let x = 20;
+// let y = 4;
+// console.log(x/y)
+
+// let m = 15;
+// let n = 2;
+// let result = m/n;
+// console.log(result)
+// console.log(Number.isInteger(m/n))
+
+// let a =12;
+// let b = -7;
+// let c = a*b;
+// console.log(a+b)
+// console.log(c)
+// // let number = -84
+// console.log(Number.isInteger(a*b))
+// let num = 4.5;
+// console.log(!Number.isInteger(num));
+
+// console.log(10>5)
+// console.log(3>7);
+
+// let num = 3.5;
+// console.log(Number.isInteger(num));
+// console.log(Number.isInteger(4.5))
+// let a = 5.5;
+// let b = 2.5;
+// console.log(a+b);
+// console.log(a-b);
+// console.log(a*b);
+// console.log(10>8);
+// console.log(5<2);
+// console.log(7===7);
+// console.log(4!==4);
+// console.log(4<=4);
+// console.log(5>2 && 10>3);
+// console.log(5>10 && 10>3);
+// console.log(7===7 && 4<9);
+// console.log(7===7 || 4<9);
+// console.log(5>2 || 10>3);
+// console.log(5>10 || 2>8);
+// console.log(!(5>2));
+// console.log(!(2>5));
+// let score = 45;
+// console.log(score >= 50 || score === 45)
+// let age = 37;
+// console.log(age);
+// console.log(100/5 == 20 && 25 - 10 == 15);
+// console.log(18 % 2 == 0 && 18 % 5 == 0);
+// console.log(!(18 % 2 == 0 && 18 % 5 == 0));
+// console.log(50 > 100 || 60 % 6 == 0 && 9 < 20);
+// console.log(!(9 * 4 == 35));
+// console.log(9 * 9 == 80 || 9 * 9 == 81);
+// let hour = 18;
+// if(hour < '18:00'){
+//     greeting ="Good morning";
+// }
+// console.log('Good morning');
+// let age = 20;
+// let text = "you cannot drive";
+// if (age >=18){
+//     text = "you can drive";
+// }
+// // console.log(text);
+// const hour = new Date().getHours();
+// let greeting;
+// if (hour < 18){
+//     greeting ="Good morning";
+// }
+// else {
+//     greeting = "Good evening";
+// }
+// console.log(greeting);
+ 
+//  let num = -100;
+//  if (num > 0){
+//  console.log("Positive");
+//  }else
+//  {
+//  console.log("Negetive");
+ 
+//  }
+
+//  let score = 51;
+//  let student = "You fail";
+//  if(score >= 50){
+//     student = "You pass";
+//  }
+//  console.log(student);
+//  let a = 33;
+//  let b = 25;
+//  if (a> b) {
+//     console.log(a);
+//  }
+//  else {
+//     console.log(b);
+//  }
+//  let password = "mypassword";
+//  if(password.length >=8){
+//     console.log("Valid Password");
+//  }
+//  else{
+// console.log("Password Too Short");    
+//  }
+ 
+//  let number = -10;
+//  if (number < 0) {
+//     console.log("Negative");
+//  } 
+//  else {
+//     console.log("Positive");
+//  }
+ 
+//  let age = 15;
+//  if (age >=18)
+//  {
+//  console.log("You are an Adult");
+//  } else{
+//     console.log("You are minor");
+//  }
+
+//  let passwords = "abc12";
+//       if (passwords.length >=8){
+//        console.log("Strong Passwords");
+//       } else{
+//       console.log("Weak Passwords");}
+
+//       let amount = 19500;
+//       if (amount >=10000){
+//          console.log("Give Discount");
+//        } else{
+//             console.log("No Discount");
+//          }
+
+//          let temperature = 36;
+//          if (temperature > 30){
+//             console.log("Hot");
+//          }
+//          else {
+//             console.log("Cool");
+//          }
+//          let day = 4;
+//          switch (day){
+//             case 1:
+//                console.log("Monday");
+//                break;
+//                case 2:
+//                   console.log("Tuesday");
+//                    break;
+//                   case 3:
+                    
+//                      console.log("Wednesday");
+//                      break;
+//                      default:
+//                         console.log("Invalid day")
+//          }
+         let day = 5;
+         switch (day){
+            case 1: 
+            console.log("Monday");
+            break;
+            case 2: 
+            console.log("Tuesday");
+            break;
+            case 3: 
+            console.log("Wednsday");
+            break;
+            case 4: 
+            console.log("Thursday");
+            break;
+            case 5: 
+            console.log("Friday");
+            break;
+            case 6: 
+            console.log("Saturday");
+            break;
+            case 7: 
+            console.log("Sunday");
+            break;
+            default: 
+            console.log("Invalid input");
+            break;
+         }
+         
+    //      let grade = prompt("A, B, C, D, F");
+    //      if (grade !== null){
+    //      grade = grade.toUpperCase()
+    //      switch (grade){
+    //      case "A": 
+    //         console.log("Excellent");
+    //         break;
+    //         case "B": 
+    //         console.log("Very Good");
+    //         break;
+    //         case "C": 
+    //         console.log("Good");
+    //         break;
+    //         case "D": 
+    //         console.log("Pass");
+    //         break;
+    //         case "F": 
+    //         console.log("Fail");
+    //         break;
+    //         default:
+    //            console.log("Invalid Grade");
+    //      }
+    //    } else {
+    //      console.log("No grade entered");
+    //      }
+
+//       let month = 11;
+//       switch(month){
+//          case 1:
+//             console.log("January");
+//             break;
+//              case 2:
+//             console.log("February");
+//             break;
+//              case 3:
+//             console.log("March");
+//             break;
+//              case 4:
+//             console.log("April");
+//             break; 
+//             case 5:
+//             console.log("May");
+//             break;
+//              case 6:
+//             console.log("June");
+//             break;
+//              case 7:
+//             console.log("July");
+//             break;
+//              case 8:
+//             console.log("August");
+//             break; 
+//             case 9:
+//             console.log("September");
+//             break; 
+//             case 10:
+//             console.log("October");
+//             break; 
+//             case 11:
+//             console.log("November");
+//             break;
+//              case 12:
+//             console.log("December");
+//             break;
+//             default:
+//                console.log("Invalid month")
+//       }
+      
+//       CALCULATOR OPRATOR
+//       let operator = "+";
+//       switch (operator){
+//          case "+":
+//          console.log("Addition");
+//          break;
+//          case "-":
+//          console.log("Subtraction");
+//          break;case "/":
+//          console.log("Addition");
+//          break;case "+":
+//          console.log("Addition");
+//          break;
+//       }
+// console.log(1);
+// console.log(2);
+// console.log(3);
+// console.log(4);
+// console.log(5);
+//       for(let i=1; i<=5; i++){
+//          console.log(i);
+//       }
+
+//       for(let i=1; i<=10; i++){
+//          console.log(i);
+//       }
+
+//  for(let i=2; i<=20; i+=2){
+//          console.log(i);
+//  }
+//  for(let i=10; i>=1; i--){
+//          console.log(i);
+//  }
+//  let number = 1;
+//  while(number <=5){
+//    console.log(number);
+//    number++;
+//  }
+
+//  let nummber = 10;
+//       do {
+//          console.log(nummber);
+//          number++;
+//       } while(number <=5);
+
+//       for(let i=1; i<= 10; i++){
+//          if (i===6){
+//             break;
+//          }
+//          console.log(i);
+//       }
+
+//       for(let i=1; i<= 5; i++){
+//          if (i===4){
+//             continue;
+//          }
+//          console.log(i);
+//       }
+      //create a countdown from 10 to 1, then display "busted"
+    //   for(let i=10; i>=1; i--){
+    //      console.log(i);
+    //   }
+    //   console.log("busted");
+
+      //print a multiplication table of 5 from 1 to 12
+//       let number = 12;
+//       for(let i = 1; i <= 12; i++){
+//          console.log(number + "x" +i+"="+(number*i))
+//       }
+//       //count how many even number exist between 1 and 20
+//       let count = 0;
+//       for(let i= 1; i<= 20; i++){
+//       if(i % 2 === 0){
+//          count++; 
+//       }
+//       }
+//       console.log(count);
+
+//     function greet(){
+//         console.log("Hello world");
+//     }
+//     greet();
+//     greet();
+//     greet();
+// const greet = () =>{
+//     console.log("Hello");
+// }
+// greet();
+
+// function greetUser(name){
+//     console.log("Hello" + name);
+// }
+// greetUser("Ismail");
+
+// function addNumbers(a,b){
+//     console.log(a+b);
+// }
+    //create a function that accept numbers and return its addition
+    // addNumbers(10, 5);
+    // function addNumbers(a,b){
+    //     return a+b;
+    // }
+    // let result = addNumbers(10, 5);
+    // console.log(result);
+    // factorial of 5
+    // let num = 5; 
+    // let factorial = 1;
+    // for (let i = num; i>= 1; i--) {
+    //     factorial *= i;
+    // }
+    // console.log(num + "! = " + factorial);
+
+    // sum of number from 1 to 10
+    // let sum = 0;
+    // for (let i = 1; i <= 10; i++) {
+    //     sum += i;
+    // }
+    // console.log(+sum);
+// assignment:create a function that accept lengthand width and return the area 
+    // function Area(length, width){
+    //     return length * width;
+    // }
+    // let result = Area(2, 3);
+    // console.log(result);
+
+     // creat a function that accept a number and return its square
+    //  function square(width, height){
+    //     return width * height;
+    //  }
+    //  let answer = square(4, 5);
+    //  console.log(answer);
+
+    //  create a function that receives a number and displays whether it is even or odd
+    //  function checkEvenOdd(number){
+    //     if (number % 2 === 0){
+    //         console.log(number + "is Even");
+    //     } else {
+    //         console.log(number + "is Odd");
+    //     }
+    //  }
+    //  checkEvenOdd(4)
+        //creat a function that calculates the factorial of a number
+    // function num()
+    // let factorial = 1;
+    // for (let i = num; i>= 1; i--) {
+    //     factorial *= i;
+    // }
+    // console.log(num + "! = " + factorial);
+      function multiplicationTable(number) {
+       for(let i = 1; i <= 12; i++){
+        // let result = number * i;
+          console.log(number + "x" +i+"="+(number*i));
+       }
+      }
+      multiplicationTable(7);
+
+
+        //      Functiongrade = prompt ("Enter your grade: A, B, C, D, F");
+        //   if (grade !== null){
+        function getGrade(grade){
+           grade = grade.toUpperCase()
+        
+         switch (grade){
+         case "A": 
+            return "Excellent"; 
+            
+            case "B": 
+            return "Very Good";
+        
+            case "C": 
+            return "Good";
+            
+            case "D": 
+            return "Pass";
+        
+            case "F": 
+            return "Fail";
+            
+            default:
+               return "Invalid Grade";
+            getGrade(B);       
+         }
+        }
+        
+        function getLarger(num1, num2) {
+            if (num1 > num2) {
+                return num1;
+                else {
+                    return num2;
+                }
+            }
+        }
+        // else {
+        //  console.log("No grade entered");
+        //  }
+</script>
+</body>
+</html>
